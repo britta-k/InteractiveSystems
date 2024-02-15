@@ -3,15 +3,25 @@ body {
     background-image: url("background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    text-align: center;
     font-family: poppins;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+    font-weight: 300;
 }
 
-th {
-    padding: 0 10px;
+.countDownContainer {
+    display: flex;
+}
+.countElement {
+   padding: 0 20px;
+   text-align: center;
+}
+
+.bigText {
+    font-size: 30px;
 }
