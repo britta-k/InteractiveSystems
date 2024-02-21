@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #DFE4F5;
+    font-family: poppins;
 
     display: flex;
     align-items: center;
@@ -12,10 +13,21 @@ body {
     border-radius: 20px;
     width: 80%;
     height: 90%;
+    padding: 10px;
 }
 
 h1 {
     padding-left: 3%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
 }
 
 /********nav********/
@@ -77,6 +89,13 @@ a:hover {
 .oneUserContainer {
     display: flex;
     flex-direction: row;
+    padding: 10px;
+}
+
+.oneUserContainer:hover {
+    border: 1px solid #c3cce8;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #c3cce8;
 }
 
 img {
@@ -98,4 +117,5 @@ img {
     border-radius: 20px;
     padding: 3px 6px;
     margin: 0;
+    font-size: 13px;
 }
