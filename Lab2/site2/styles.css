@@ -18,6 +18,53 @@ h1 {
     padding-left: 3%;
 }
 
+/********nav********/
+.search {
+    float: left;
+    width: 20%;
+    border: 1px solid #c3cce8;
+    border-radius: 5px;
+    margin-left: 3%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search img {
+    width: 24px;
+    height: 24px;
+    padding-left: 3%;
+}
+
+.search p {
+    color: gray;
+}
+
+.navigation {
+    float: right;
+    margin-right: 3%;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 2px;
+    color: black;
+}
+
+a:hover {
+    background-color: #849FFF;
+    color: white;
+}
+
+/********users********/
+
 .allUsersContainer {
     width: 90%;
     padding: 3%;
@@ -46,7 +93,7 @@ img {
 }
 
 .tagsContainer p {
-    color: blue;
+    color: #849FFF;
     border: 1px solid #c3cce8;
     border-radius: 20px;
     padding: 3px 6px;
