@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: #DFE4F5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainSection {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    height: 90%;
+}
+
+h1 {
+    padding-left: 3%;
+}
+
+.allUsersContainer {
+    width: 90%;
+    padding: 3%;
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.oneUserContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 125px;
+    height: 125px;
+    padding-right: 5%;
+}
+
+.tagsContainer {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tagsContainer p {
+    color: blue;
+    border: 1px solid #c3cce8;
+    border-radius: 20px;
+    padding: 3px 6px;
+    margin: 0;
+}
