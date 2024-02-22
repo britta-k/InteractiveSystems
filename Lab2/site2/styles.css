@@ -37,10 +37,16 @@ p {
     border: 1px solid #c3cce8;
     border-radius: 5px;
     margin-left: 3%;
+    padding: 15px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+input {
+    border: none;
+    outline: none;
 }
 
 .search img {
