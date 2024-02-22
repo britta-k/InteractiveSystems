@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    text-align: center;
+}
+
+.items {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background-color: #DFE4F5;
+    padding: 50px;
+    border-radius: 20px;
+    width: 120px;
+}
+
+#tip {
+    width: 600px;
+    background-color: #849FFF;
+}
+
+p {
+    font-weight: 800;
+}
+
+#tip p {
+    font-size: 20px;
+}
