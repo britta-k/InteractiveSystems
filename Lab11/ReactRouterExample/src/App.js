@@ -9,7 +9,7 @@ import {Header} from './components/Header';
 import {Admin} from './components/Admin';
 
 function App() {
-  const isAdmin = false;
+  const isAdmin = true;
   return (
     <BrowserRouter>
     <div className="App">
