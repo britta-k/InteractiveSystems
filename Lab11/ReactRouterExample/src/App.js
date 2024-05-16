@@ -1,12 +1,9 @@
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import {Home, ProductDetail, ProductList, Contact, Admin, NotFound} from './pages';
+import {Header, Footer} from './components';
+
 import './App.css';
-import {Home} from './components/Home';
-import {NotFound} from './components/NotFound';
-import {ProductList} from './components/ProductList';
-import {ProductDetail} from './components/ProductDetail';
-import {Contact} from './components/Contact';
-import {Header} from './components/Header';
-import {Admin} from './components/Admin';
+
 
 function App() {
   const isAdmin = true;
@@ -23,7 +20,7 @@ function App() {
         <Route path="/admin" element={isAdmin? <Admin/> : <Navigate to="/"></Navigate>}></Route>
       </Routes>
     </div>
-    <footer>FOOTER</footer>
+    <Footer></Footer>
     </BrowserRouter>
   );
 }

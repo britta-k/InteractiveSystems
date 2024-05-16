@@ -2,9 +2,10 @@ import {useState, useEffect} from 'react';
 import './App.css';
 import APIKey from './config';
 import Movie from './Components/Movie';
+//import Search from './Components/Search';
 
 const APIURL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=';
-const ImageURL = 'https://image.tmdb.org/t/p/w500/';
+const SearchURL = 'https://image.tmdb.org/t/p/w500/';
 
 function App() {
   const [movieResults, setMovieResults] = useState([]);
@@ -15,7 +16,7 @@ function App() {
     fetch(APIURL + APIKey)
     .then( (resp) => resp.json() )
     .then( (data) => {
-        console.log(data);
+        console.log(data.results);
         setMovieResults(data.results);
       }
       )
