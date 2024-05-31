@@ -1,31 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import {Home, Fiction, Nonfiction} from './pages';
+import {Header} from './components';
 
-const APIURL = 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=Tdg0jGGpcZn1ydjogoOAZgQ7u4s8yb81';
-
-function BookList() {
-  const [books, setBooks] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-        const response = await fetch(APIURL);
-        const data = await response.json();
-        setBooks(data.results.books);
-    };
-    fetchData();
-  }, []);
-
+function App() {
   return (
-    <div>
-      <h1>Current Hardcover Fiction Books</h1>
-      <ul>
-        {books.map(book => (
-          <li key={book.primary_isbn10}>
-            <strong>{book.title}</strong> by {book.author}
-          </li>
-        ))}
-      </ul>
+    <BrowserRouter>
+    <div className="App">
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/fiction" element={<Fiction/>}></Route>
+        <Route path="/nonfiction" element={<Nonfiction/>}></Route>
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
-export default BookList;
+export default App;
