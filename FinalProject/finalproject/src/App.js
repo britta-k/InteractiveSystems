@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {Home, Fiction, Nonfiction} from './pages';
 import {Header} from './components';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/fiction" element={<Fiction/>}></Route>
         <Route path="/nonfiction" element={<Nonfiction/>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
     </BrowserRouter>
   );
