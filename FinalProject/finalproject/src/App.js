@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {Home, Fiction, Nonfiction} from './pages';
 import {Header} from './components';
 import { Footer } from './components/Footer';
+import './App.css';
 
 function App() {
   return (

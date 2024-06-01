@@ -1,5 +1,9 @@
 export const Footer = () => {
     return (
-      <div>Footer</div>
+      <footer>
+        <h3>Bestselling Books</h3>
+        <p>2024</p>
+      </footer>
+
     )
   }

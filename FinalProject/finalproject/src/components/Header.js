@@ -6,6 +6,7 @@ export const Header = () => {
       <a href = "/" className="logo">
         <img src = {Logo} alt='logo'></img>
       </a>
+      <h1>Bestselling Books</h1>
       <nav className = 'navigation'>
         <NavLink to = "/" className = 'link'>Home</NavLink>
         <NavLink to = "/fiction" className = 'link'>Fiction</NavLink>
