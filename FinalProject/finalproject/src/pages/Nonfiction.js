@@ -65,6 +65,9 @@ export const Nonfiction = () => {
                 <p>Rank last week: #{book.rank_last_week}</p>
                 <p>Publisher: {book.publisher}</p>
                 <p>Description: {book.description}</p>
+                <div id='buy-span'>
+                  <a href={book.amazon_product_url} target="_blank" rel="noopener noreferrer" id="buy">Buy this book</a>
+                </div>
               </div>
             )}
           </li>

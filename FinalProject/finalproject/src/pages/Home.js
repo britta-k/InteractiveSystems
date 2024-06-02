@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import Hemingway from '../assets/hemingway.jpg';
 import King from '../assets/king.jpg';
 import Kolk from '../assets/kolk.jpg';
+import Books from '../assets/books.png';
 
 // Book component to render individual book details
 const Book = ({ image, category, title, author, buttonText, buttonLink }) => {
@@ -48,8 +49,9 @@ export const Home = () => {
           />
         </div>
       </section>
-      <section className="home-section">
+      <section className="home-section read-next">
         <h2>What to read next?</h2>
+        <img src= {Books} alt="Books" className="books-image" />
         <p>
           Our carefully curated lists of bestselling books are meticulously updated each week, bringing you the freshest trends and top titles in both fiction and nonfiction genres. Dive into our weekly rankings to stay ahead of the curve and discover the most talked-about books that are capturing readers' imaginations across the globe. Whether you're seeking a thrilling novel, a thought-provoking biography, or the latest self-help guide, our dynamic lists ensure you never miss a must-read. Follow the shifts in ranking as new literary sensations emerge and established favorites hold their ground. Explore, read, and stay connected to the world of books with our up-to-date and comprehensive selections, designed to help you find your next great read.
         </p>

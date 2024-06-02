@@ -46,6 +46,9 @@ h2 {
   font-weight: 600;
 }
 
+
+/**navigation**/
+
 .navigation {
   display: flex;
   gap: 15px;
@@ -72,6 +75,11 @@ h2 {
   background-color: #D8D4BA;
   padding: 10px;
   border-radius: 5px;
+}
+
+.button:hover {
+  color:#6C7C4D;
+  background-color: #BCCBA4;
 }
 
 .bookCover {
@@ -147,7 +155,6 @@ h2 {
   }
 
   .book-details {
-    max-width: 100%;
     margin-bottom: 20px;
   }
 
@@ -208,6 +215,17 @@ h2 {
   margin: 0;
 }
 
+.read-next {
+  text-align: center;
+  padding: 60px;
+}
+
+.read-next .books-image {
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
 /**Booklist pages**/
 .green {
   color:#947C41;
@@ -266,6 +284,11 @@ h2 {
   background-color: #BCCBA4;
   padding: 10px;
   border-radius: 5px;
+}
+
+#buy-span {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #buy:hover {
