@@ -296,6 +296,38 @@ h2 {
   background-color: #6C7C4D;
 }
 
+/**Author's page**/
+
+.author-container p {
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #947C41;
+}
+
 /**Footer**/
 
 footer {

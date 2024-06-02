@@ -21,7 +21,7 @@ export const Nonfiction = () => {
   const booksWithPositionChanges = useMemo(() => {
     return books.map((book, index) => {
       let positionChange;
-      let rankChangeClass = ''; // Initialize CSS class
+      let rankChangeClass = ''; // Initializes CSS class
       if (book.rank_last_week === 0) {
         positionChange = 'New on the list';
         rankChangeClass = 'green';
@@ -29,14 +29,14 @@ export const Nonfiction = () => {
         const change = book.rank_last_week - book.rank;
         positionChange = change > 0 ? `Increased by ${change}` : change < 0 ? `Decreased by ${Math.abs(change)}` : 'No change';
         if (change > 0 || book.rank_last_week === 0) {
-          rankChangeClass = 'green'; // Apply green color if ranking increased
+          rankChangeClass = 'green'; // Applies another color if ranking increased
         }
       }
       return {
         ...book,
         positionChange,
-        rankChangeClass, // Add CSS class to book object
-        rank: `#${index + 1}` // Add rank number
+        rankChangeClass, // Adds CSS class to book object
+        rank: `#${index + 1}` // Adds rank number
       };
     });
   }, [books]);
