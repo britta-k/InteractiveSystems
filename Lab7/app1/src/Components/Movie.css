@@ -1,3 +1,15 @@
+.green {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
+
 *{
     padding: 0;
     margin: 0;
